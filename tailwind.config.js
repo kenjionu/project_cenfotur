@@ -4,7 +4,11 @@ module.exports = {
     "./src/**/*.{html,ts}",
   ],
   theme: {
-    extend: {},
+    extend: {
+    },
+    variants: {
+      opacity: ({ after }) => after(['disabled'])
+    },
   },
   plugins: [],
 }

@@ -15,8 +15,8 @@ import { authDTO } from '../../dto/auth.dto';
 @Injectable({
  providedIn: 'root',
 })
-export class UserService {
- private apiUrl = 'http://localhost:3001/users';
+export class AuthService {
+ private apiUrl = 'http://localhost:3001/login';
 
  constructor(private http: HttpClient) {}
 

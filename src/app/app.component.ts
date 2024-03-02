@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
+import { StoreDevtools } from '@ngrx/store-devtools';
 
 @Component({
   selector: 'app-root',

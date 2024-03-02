@@ -3,3 +3,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+$imageBackground: './assets/images/background-login.webp';
+
+
+.img-background {
+  background-image: url($imageBackground);
+  background-size: cover;
+}
+.custom-gradient{
+  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 47%, transparent 80%);
+}

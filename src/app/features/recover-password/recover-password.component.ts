@@ -11,11 +11,17 @@ import { FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angula
   styleUrl: './recover-password.component.scss'
 })
 export class RecoverPasswordComponent {
+formSubmit: boolean = false;
 recoverForm: FormGroup = new FormGroup({
-  username: new FormControl('',Validators.required)
+  username_email: new FormControl('',[Validators.email, Validators.required])
 });
 
   recoverUser(){
+    this.formSubmit = true;
+    console.log('test')
+  }
 
+  comeBack(back: boolean){
+    this.formSubmit = back;
   }
 }
