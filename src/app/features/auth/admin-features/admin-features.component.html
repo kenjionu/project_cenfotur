@@ -1,1 +1,11 @@
-<p>admin-features works!</p>
+<molecule-sidenav [menu]="menu"></molecule-sidenav>
+
+
+<!-- Main Content -->
+<main class="w-full md:w-[calc(100%-256px)] md:ml-64 bg-gray-200 min-h-screen transition-all main">
+  <molecule-navbar></molecule-navbar>
+
+  <router-outlet></router-outlet>
+<!-- End Content -->
+</main>
+

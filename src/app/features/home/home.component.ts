@@ -7,6 +7,7 @@ import { UserService } from '../../infraestructure/services/user/user.service';
 import { FormBuilder, FormControl, FormGroup, ReactiveFormsModule, Validators } from '@angular/forms';
 import { catchError, map, takeUntil } from 'rxjs';
 import { Router } from '@angular/router';
+import { SidenavComponent } from '../../components/atoms/molecules/sidenav/sidenav.component';
 
 
 @Component({
