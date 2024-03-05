@@ -73,6 +73,10 @@ export const routes: Routes = [
               path: 'config',
               component: ConfigComponent
             },
+            {
+              path: 'logout',
+              redirectTo: '/home'
+            },
           ]
 
         }

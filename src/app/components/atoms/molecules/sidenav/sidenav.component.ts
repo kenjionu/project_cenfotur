@@ -1,13 +1,14 @@
 import { Component, Input, OnInit } from "@angular/core";
 import { sideMenu } from "../../../../core/interfaces/menu/menu";
 import { CommonModule } from "@angular/common";
+import { RouterModule } from "@angular/router";
 
 @Component({
   selector: 'molecule-sidenav',
   templateUrl: './sidenav.component.html',
   styleUrl: './sidenav.component.scss',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterModule],
 
 })
 
